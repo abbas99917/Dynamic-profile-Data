@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   CARD WRAPPER
+========================= */
+
+.card-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+/* =========================
+   LEFT / RIGHT ICONS
+========================= */
+
+.prev-btn,
+.next-btn {
+    flex-shrink: 0;
+
+    font-size: 32px;
+    color: #333;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    color: #2563eb;
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.main-cart {
+    width: 350px;
+    max-width: 100%;
+    min-height: 450px;
+
+    background: #fff;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   BACKGROUND IMAGE
+========================= */
+
+.bacground-image {
+    width: 100%;
+    height: 150px;
+
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profileImage {
+    width: 125px;
+    height: 125px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    top: 85px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #fff;
+
+    border: 5px solid #fff;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    padding: 75px 25px 30px;
+
+    text-align: center;
+}
+
+
+/* NAME */
+
+.name {
+    font-size: 23px;
+    font-weight: 700;
+
+    color: #222;
+
+    margin-bottom: 6px;
+}
+
+
+/* PASSION */
+
+.passion {
+    display: block;
+
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/* DESCRIPTION */
+
+.descriptions {
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    text-align: left;
+}
+
+
+/* =========================
+   MESSAGE BUTTON
+========================= */
+
+.sent-messgage {
+    width: calc(100% - 40px);
+
+    margin: 0 20px 25px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 12px 18px;
+
+    background: #111827;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.sent-messgage i {
+    font-size: 14px;
+}
+
+.sent-messgage:hover {
+    background: #2563eb;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.sent-messgage:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .card-wrapper {
+        gap: 15px;
+    }
+
+    .main-cart {
+        width: 320px;
+    }
+
+    .prev-btn,
+    .next-btn {
+        font-size: 28px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .card-wrapper {
+        gap: 10px;
+    }
+
+    .main-cart {
+        width: 280px;
+        min-height: 420px;
+    }
+
+    .prev-btn,
+    .next-btn {
+        font-size: 24px;
+    }
+
+    .bacground-image {
+        height: 125px;
+    }
+
+    .profileImage {
+        width: 105px;
+        height: 105px;
+
+        top: 70px;
+    }
+
+    .about {
+        padding: 65px 18px 25px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .passion {
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+
+    .descriptions {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .sent-messgage {
+        width: calc(100% - 30px);
+
+        margin: 0 15px 20px;
+
+        padding: 11px 15px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 360px) {
+
+    .card-wrapper {
+        gap: 6px;
+    }
+
+    .main-cart {
+        width: 245px;
+    }
+
+    .prev-btn,
+    .next-btn {
+        font-size: 20px;
+    }
+
+    .profileImage {
+        width: 95px;
+        height: 95px;
+    }
+
+    .about {
+        padding-top: 58px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .descriptions {
+        font-size: 12px;
+    }
+}
