@@ -82,6 +82,26 @@ const passion = document.querySelector(".passion");
 const descriptions = document.querySelector(".descriptions");
 const cardWrapper = document.querySelector(".card-wrapper")
 
+const navigationDots = document.querySelector(".navigation-dots");
+//// dot navigations
+const createDots = () => {
+    navigationDots.innerHTML = "";
+
+    users.forEach((user, index) => {
+        const dot = document.createElement("span");
+
+        dot.classList.add("dot");
+
+        if (index === currentIndex) {
+            dot.classList.add("active");
+        }
+
+        dot.dataset.index = index;
+
+        navigationDots.appendChild(dot);
+    });
+};
+
 //current-state
 let currentIndex = 0;
 const showProfileDetails = () => {
@@ -92,6 +112,7 @@ const showProfileDetails = () => {
     name.textContent = currentUser.name;
     passion.textContent = currentUser.passion;
     descriptions.textContent = currentUser.description;
+    createDots()
 };
 
 
@@ -121,6 +142,30 @@ showProfileDetails()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// toast-notifications
 const message = document.querySelector(".sent-messgage");
 
 message.addEventListener("click", () => {
