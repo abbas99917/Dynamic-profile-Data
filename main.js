@@ -119,3 +119,24 @@ cardWrapper.addEventListener("click", (e) => {
 });
 showProfileDetails()
 
+
+
+const message = document.querySelector(".sent-messgage");
+
+message.addEventListener("click", () => {
+
+    setTimeout(() => {
+        const toast = document.querySelector(".toast-notification");
+
+        toast.classList.add("show");
+
+        setTimeout(()=>{
+        toast.classList.remove("show")
+        },3000)
+
+    }, 300);
+
+});
+
+
+
