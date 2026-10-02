@@ -6,7 +6,7 @@
 
 body {
     min-height: 100vh;
-    background: #f08383;
+    background: #010736;
     font-family: Arial, sans-serif;
 
     display: flex;
@@ -247,7 +247,7 @@ body {
     width: 10px;
     height: 10px;
     display: block;
-    background: #ccc;
+    background: #fff;
     border-radius: 50%;
     cursor: pointer;
      transition:
@@ -267,7 +267,7 @@ body {
 
 .dot.active {
     width: 25px;
-    background: #2373F4;
+    background: #006199;
     border-radius: 10px;
 }
 /* ======================================================= */
