@@ -141,30 +141,6 @@ cardWrapper.addEventListener("click", (e) => {
 showProfileDetails()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // toast-notifications
 const message = document.querySelector(".sent-messgage");
 
